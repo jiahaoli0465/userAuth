@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="page">
+    <div id="welcome">
+        <h1>Welcome {{session['username']}}!</h1>
+        <p>You have successfully logged in</p>
+        <p>This is my <b>user registration</b> practice app!</p>
+        <p>I hope you liked it</p>
+        <p>Check out your profile <a href="/users/{{session['username']}}">here!</a></p>
+    </div>
+    
+
+</div>
+{% endblock %}
